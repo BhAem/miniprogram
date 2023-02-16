@@ -11,4 +11,4 @@
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
 ## 展示
-- [](./1.png)
+![image](./1.png)
