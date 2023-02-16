@@ -1,0 +1,37 @@
+<!--pages/notice/notice.wxml-->
+<view class="container" scroll-y="true">
+  <view class="box">
+    <view class="topic" style="text-align: center; padding-left: 0%; font-size: {{switchOldMode? 25:''}}px;">平台守则</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">在使用本平台各项产品或服务前，请您务必仔细阅读并透彻理解本政策,以了解用户权利及义务。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">（一）个人隐私</view>
+    <view class="mytext" style="white-space:pre-wrap; font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">
+    1.我们基于微信平台账户为您提供服务，为注册成为我们的用户并使用我们的服务，您需要提供手机号码、微信账号、微信名用于登录本平台，以便顺利向您提供数据统计等服务。<text>\n</text><text>\n</text>
+    2.本平台模糊化商户和用户界限，做到买卖一体化，用户既可以简易发布售卖信息，也可以之间求购所需产品。本平台作为交易平台，但不支持线上交付行为，用户对于心仪的商品可以获取商家的联系方式进行电话沟通、微信交流来进行交易，保证用户账户信息不在平台进行泄露。<text>\n</text><text>\n</text>
+    3.我们不会与任何的公司、组织和个人共享您的个人信息，确保个人隐私安全。<text>\n</text>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">（二）用户权利</view>
+    <view class="mytext" style="white-space:pre-wrap; font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}"> 
+    1.用户能在本平台上查询相关商品信息，同时，用户有权发布，变更或删除自己发布的商品信息。<text>\n</text><text>\n</text>
+    2.用户发布信息需主义审核信息，平台仅允许发布与平台规定相关的商品信息，一切色情、暴力、不正当的信息都不允许发布，用户管理员有权删除用户的不正当信息。<text>\n</text>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">（三）信息的存储</view>
+    <view class="mytext" style="white-space:pre-wrap; font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">
+    1.存储地点
+    我们在中华人民共和国境内运营中收集和产生的个人信息，将存储在中国境内。<text>\n</text><text>\n</text>
+    2.存储期限
+    我们只会在达成本政策所述目的所需的期限内保留您的个人信息，除非法律有强制的留存要求。<text>\n</text>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">以上规定解释权由开发小组所有，开发小组联系方式如下，您可以通过以下方式与我们联系，我们将在15天内回复您的请求。</view>
+    <view class="card">
+      <image src="https://s1.ax1x.com/2022/07/14/jfm35j.png" class="cycle"></image>
+      <view class="intro" style="margin-top: 40rpx;">
+        客服
+      </view>
+      <button class="btn" open-type="contact" type="primary" size="mini" style="height: 60rpx; line-height: 60rpx;font-size: 40rpx;">点击联系</button>
+    </view>
+  </view>
+</view>

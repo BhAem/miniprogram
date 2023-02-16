@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的求购",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#18B458",
+  "usingComponents": {
+    "van-card": "../../miniprogram_npm/@vant/weapp/card/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index"
+  }
+}

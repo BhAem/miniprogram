@@ -1,0 +1,35 @@
+<!--pages/homesearch/homesearch.wxml-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onClick" 
+style="font-size: {{switchOldMode? 20:''}}px;">搜索</view>
+</van-search>
+
+<view class="container">
+  <text>\n</text>
+  <view class="topic" 
+style="font-size: {{switchOldMode? 20:''}}px;">历史搜索</view>
+
+  <view class="menu" wx:key="index">
+    <view wx:if="{{history.length != 0}}">
+      <view class="item" wx:for="{{history}}" wx:key="index" id="{{item}}" bindtap="chosen" data-index="{{index}}" 
+style="font-size: {{switchOldMode? 17:''}}px;">{{item}}</view>
+    </view>
+    <view wx:else>
+      <text>\n\n</text>
+    </view>
+  </view>
+
+
+  <view class="topic" 
+style="font-size: {{switchOldMode? 20:''}}px;">热门搜索</view>
+  <view class="menu" > 
+    <view class="item" wx:for="{{hot}}" wx:key="index" id="{{item}}" bindtap="chosen" data-index="{{index}}" 
+style="font-size: {{switchOldMode? 17:''}}px;">{{item}}</view>
+  </view>
+</view>

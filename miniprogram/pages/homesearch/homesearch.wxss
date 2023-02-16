@@ -1,0 +1,28 @@
+/* pages/homesearch/homesearch.wxss */
+.container {
+  width: 750rpx;
+  height: 1360rpx;
+  background-image: url('https://636c-cloud1-3g192wyqd9d72719-1311228133.tcb.qcloud.la/imags/home_bg.png?sign=17e61aa5688200de5c0bbef031527971&t=1651410367');
+  background-size: 100% 100%;
+}
+
+.topic {
+  margin-left: 50rpx;
+  color: yellow;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.menu {
+  width: 90%;
+  margin-left: 50rpx;
+  float: left;
+}
+
+.item {
+  float: left;
+  margin: 10rpx;
+  padding: 10rpx;
+  background-color: #f2f2f2;
+  border-radius: 20rpx;
+}

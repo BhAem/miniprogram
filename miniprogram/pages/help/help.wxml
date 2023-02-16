@@ -1,0 +1,27 @@
+<!--pages/help/help.wxml-->
+<view wx:if="{{!vis}}">
+  <text>敬请期待</text>
+</view>
+<view wx:else>
+<view class="container" scroll-y="true">
+  <view class="box">
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">关于村予村寻</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">村予村寻是一款面向乡村的便利交流平台，致力于建设美丽乡村，实现乡村振兴。村予村寻共包含五大板块。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">首页</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">首页板块展示所有村民发布的商品和求购，村民点击物品即可进入物品详情。此板块还配有搜索功能，搜索功能拥有历史记录和热门记录板块。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">分类</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">分类板块展示了许多日常物品，方便村民查看，只要点击对应图标就可以跳转到详情页面，详情页面提供按价格排序功能和按地区检索功能。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">发布</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">首页板块提供两个简洁的按钮，村民可以点击发布求购或者发布商品。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">收藏</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">收藏板块展示用户收藏的商品或求购，提供“取消收藏”功能，点击物品即可进入物品详情页面。</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">我的</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">我的板块提供登录功能，并且可以查看“我的发布”、“我的求购”和“历史记录”。</view>
+  </view>
+ </view>
+</view>

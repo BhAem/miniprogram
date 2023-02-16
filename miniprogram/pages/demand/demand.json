@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "求购界面",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#18B458",
+  "usingComponents": {
+    "van-tabbar": "../../miniprogram_npm/@vant/weapp/tabbar/index",
+    "van-tabbar-item": "../../miniprogram_npm/@vant/weapp/tabbar-item/index",
+    "van-goods-action": "../../miniprogram_npm/@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "../../miniprogram_npm/@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "../../miniprogram_npm/@vant/weapp/goods-action-button/index"
+  }
+}

@@ -1,0 +1,265 @@
+/* pages/check2/check2.wxss */
+page {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.obstacle {
+  height: 550rpx;
+}
+
+.form {
+
+  /* background: #FF0000; */
+  background-color: white;
+  width: 668rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* border: black solid 3px; */
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  border: 1rpx solid #01050f38;
+  border-radius: 33rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.3);
+  /* margin: 0 auto; */
+  margin-top: 2rpx;
+}
+
+.xform {
+  margin: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.x1 {
+  height: 130rpx;
+  border-bottom: solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3rpx;
+}
+
+.x2 {
+  height: 400rpx;
+  margin-top: 0rpx;
+  box-sizing: border-box;
+  border-bottom: solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3rpx;
+}
+
+.xx1 {
+  font-size: 40rpx;
+  /* flex: 1; */
+  /* margin-bottom: 80rpx; */
+  box-sizing: border-box;
+  /* border-bottom: solid black;
+    border-bottom-width: 3rpx; */
+}
+
+.xx2 {
+  margin-bottom: 15rpx;
+  box-sizing: border-box;
+  font-size: 40rpx;
+}
+
+input {
+  font-size: small;
+}
+
+textarea {
+  height: 320rpx;
+  width: 600rpx;
+  /* background-color: black */
+}
+
+.phcolor {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.inputText {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.cu-tag {
+  margin: 6rpx 0rpx;
+  margin-right: 8rpx;
+  font-size: 26rpx;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 12rpx 16rpx;
+  height: 60rpx;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  white-space: nowrap;
+  border-radius: 15rpx;
+  width: 120rpx;
+}
+
+.bg-blue {
+  background-color: #3abf78;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Tag {
+  height: 140rpx;
+  border-bottom: solid rgba(0, 0, 0, 0.3);
+  border-bottom-width: 3rpx;
+}
+
+.pages {
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.top {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-size: 50rpx;
+  background-color: white;
+  border-left: 8rpx solid #3abf78;
+  border-bottom: 1rpx solid rgba(117, 116, 116, 0.527);
+}
+
+.top_name {
+  margin-left: 20rpx;
+}
+
+/* 图片 */
+.images_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.img-box {
+  border: none;
+  border-color: rgba(0, 0, 0, 0.452);
+  margin-left: 17rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  width: 130rpx;
+  height: 130rpx;
+  display: block;
+  box-sizing: border-box;
+  left: 0rpx;
+  top: 0rpx
+}
+
+/* 删除图片 */
+.img-delect {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: -20rpx;
+  top: -20rpx;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.jiage {
+  height: 60rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rmb {
+  width: 280rpx;
+  border: 2rpx solid rgb(199, 197, 197);
+}
+
+button {
+  margin-top: 20rpx;
+  background-color: #3abf78;
+}
+
+.radio-group {
+  display: flex;
+}
+
+/* .pimg {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  margin-top: 5rpx;
+  margin-left: 5%;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.biginput {
+  height: 70rpx;
+  width: 90%;
+  float: right;
+  font-size: 30rpx;
+} */
+
+.pimg {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  margin-top: 5rpx;
+  margin-left: 5%;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.biginput {
+  height: 70rpx;
+  width: 90%;
+  float: right;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.tag-input {
+  height: 70rpx;
+  width: 90%;
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.tag-button {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  margin-top: 5rpx;
+  margin-right: 5%;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 10px;
+  text-align: center;
+}
+
+.tag-content {
+  margin: 70rpx 50rpx 50rpx 50rpx;
+}
+
+.img0 {
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: -60rpx;
+  margin-right: -20rpx;
+  float: right;
+}

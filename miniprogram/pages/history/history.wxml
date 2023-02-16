@@ -1,0 +1,82 @@
+<view wx:if="{{vis}}" class="bgbg">
+  <image class="img"  src="https://pic.imgdb.cn/item/6283070309475431299437e4.png"></image>
+</view>
+<view wx:else>
+  <view class="cu-timeline">
+  <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time1}}</view>
+  <view class="cu-item text-blue">
+    <view wx:for="{{history1}}" wx:key="index">
+      <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail1" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+      </van-card>
+    </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time2}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history2}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail2" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time3}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history3}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail3" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}">
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time4}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history4}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail4" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time5}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history5}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail5" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time6}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history6}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail6" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size: {{switchOldMode? 18:''}}px;">{{time7}}</view>
+    <view class="cu-item">
+      <view wx:for="{{history7}}" wx:key="index">
+        <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail7" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+        </van-card>
+      </view>
+  </view>
+  </view>
+  <view style="height: 10rpx; width: 100%; background-color: white;"></view>
+  <view class="jz" style="font-size: {{switchOldMode? 13:''}}px;">----到底啦，仅展示近7天的记录----</view>
+</view>

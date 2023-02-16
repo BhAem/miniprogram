@@ -1,0 +1,35 @@
+{
+  "name": "area-data",
+  "version": "3.1.2",
+  "author": "pomysky@gmail.com",
+  "description": "中国省、市、区数据(含港澳台)",
+  "license": "MIT",
+  "main": "./area-data.js",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwqs/area-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dwqs/area-data/issues"
+  },
+  "files": [
+    "area-data.js",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "china",
+    "area",
+    "行政区域代码",
+    "china area",
+    "picker",
+    "area picker",
+    "中国省份"
+  ],
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "china-area-data": "^4.0.0"
+  },
+  "dependencies": {}
+}

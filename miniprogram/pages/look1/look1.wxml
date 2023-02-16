@@ -1,0 +1,26 @@
+<!--pages/look1/look1.wxml-->
+<view wx:if="{{!flag}}">
+  <text>敬请期待</text>
+</view>
+<view wx:else>
+<scroll-view scroll-y="true" bind:scrolltolower="scrolltolower" style="height: {{windowHeight}}px;" refresher-enabled="true"  bind:refresherrefresh="refresherrefresh" refresher-triggered="{{triggered}}">
+<view wx:if="{{vis}}" class="bgbg">
+  <image class="img"  src="https://s3.bmp.ovh/imgs/2022/05/18/336c66b967954a8a.png"></image>
+</view>
+<view wx:else>
+<view class="container">
+  <view class="selection">
+  </view>
+
+  <view wx:for="{{myPublish}}" wx:key="index">
+    <van-card price="{{item.price}}" desc="{{item.content}}" title="{{item.title}}" thumb="{{item.img[0]}}" data-index="{{index}}" catchtap="showDetail" data-index="{{index}}" title-class="{{switchOldMode? 'font':''}}" desc-class="{{switchOldMode? 'font2':'card-desc'}}" >
+      <view slot="footer">
+        <van-button size="mini" round catchtap="edit" data-index="{{index}}" type="primary"><span style="font-size: {{switchOldMode? 18:''}}px;">修改</span> </van-button>
+        <van-button size="mini" round catchtap="delete" data-index="{{index}}" type="primary"><span style="font-size: {{switchOldMode? 18:''}}px;">下架</span> </van-button>
+      </view>
+    </van-card>
+  </view>
+</view>
+</view>
+</scroll-view>
+</view>

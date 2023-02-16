@@ -1,0 +1,9 @@
+<!--pages/launch/launch.wxml-->
+<van-transition name="fade" duration="700" custom-class="block">
+  <view class="flex solid-bottom padding justify-center align-center" style="margin-top: 100%;">
+      <view class="padding-sm margin-xs radius">
+      <button class="cu-btn round bg-green shadow lg" bindtap="onclick" style="font-size: {{switchOldMode? 25:''}}px;">进入小程序</button>
+      </view>
+  </view>  
+</van-transition>
+

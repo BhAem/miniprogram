@@ -1,0 +1,60 @@
+{
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序需要获取你的位置信息"
+    }
+  },
+  "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-tree-select": "@vant/weapp/tree-select/index"
+  },
+  "pages": [
+    "pages/launch/launch",
+    "pages/person/person",
+    "pages/homesearch/homesearch",
+    "pages/homegood/homegood",
+    "pages/good/good",
+    "pages/demand/demand",
+    "pages/classify/classify",
+    "pages/check1/check1",
+    "pages/check2/check2",
+    "pages/detailed/detailed",
+    "pages/look1/look1",
+    "pages/look2/look2",
+    "pages/mycollection/mycollection",
+    "pages/history/history",
+    "pages/swiper_rules/swiper_rules",
+    "pages/help/help",
+    "pages/notice/notice",
+    "pages/swiper_laws/swiper_laws",
+    "pages/index/index",
+    "pages/swiper_teach/swiper_teach"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "color": "#ffffff",
+    "selectedColor": "#ffff00",
+    "backgroundColor": "#18B458",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homegood/homegood",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/mycollection/mycollection",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
+  }
+}

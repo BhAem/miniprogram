@@ -1,0 +1,44 @@
+<!--pages/homegood/homegood.wxml-->
+<scroll-view scroll-y="true" bind:scrolltolower="scrolltolower" style="height: {{windowHeight}}px;" refresher-enabled="true"  bind:refresherrefresh="refresherrefresh" refresher-triggered="{{triggered}}">
+<view class="container" style="padding-bottom: 55rpx;">
+  <van-search disabled
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    label="搜宝贝"
+    bind:focus="onSearch" bindtap="Search" />
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{img}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image"  bindtap="Lunbo" data-url="{{item.page}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="null"></view>
+  <van-notice-bar
+    mode='link'
+    left-icon="volume-o"
+    text="新用户必读~"
+    bind:click='onteach'
+  />
+
+  <view class="selection" wx:if="{{vis2}}">
+    <view class="left" style="background-color: {{lbcolor}}; color: {{lcolor}}; font-size: {{switchOldMode? 18:''}}px;" bindtap='onhomegood'>全部商品</view>
+    <view class="right" style="background-color: {{rbcolor}}; color: {{rcolor}}; font-size: {{switchOldMode? 18:''}}px;" bindtap='onhomedemand'>全部求购</view>
+  </view>
+
+  <view wx:if="{{vis2}}">
+    <view class="menu" style=" margin: {{margin}}rpx; ">
+      <view class="menu_item" bindtap="ongood" wx:for="{{list}}" wx:key="index" data-index="{{index}}">
+        <image src="{{item.img[0]}}" mode="scaleToFill" style="width: 100%;"/>
+        <view class="good_name" style="font-size: {{switchOldMode? 22:''}}px;">{{item.title}}</view>
+        <view class="good_detail" style="font-size: {{switchOldMode? 19:''}}px;">{{item.content}}</view>
+        <view wx:if="{{vis2}}" class="address" style="font-size: {{switchOldMode? 12:''}}px;">{{item.site.province + " " + item.site.city + " " + item.site.district}}</view>
+        <view class="price" wx:if="{{vis2 && item.price}}" style="font-size: {{switchOldMode? 17:''}}px;">￥{{item.price}}</view>
+      </view>
+      <view class="standView" style=" height: {{tabbarHeight}}rpx;"></view>
+    </view>
+  </view>
+</view>
+</scroll-view>

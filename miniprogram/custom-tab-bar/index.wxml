@@ -1,0 +1,47 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="cu-bar tabbar bg-white">
+    <view class="action {{selected === 0 ? 'active' : 'default'}}" data-index="0" bindtap="switchTab">
+      <view class="cuIcon-homefill"></view> 首页
+    </view>
+     <view class="action {{selected === 1 ? 'active' : 'default'}}" data-index="1" bindtap="switchTab">
+      <view class="cuIcon-similar"></view> 分类
+    </view>
+    <view class="action add-action default" wx:if="{{vis}}">
+      <button class="cu-btn cuIcon-add btnbg shadow" bindtap="popup"></button>发布
+    </view>
+    <view class="action {{selected === 2 ? 'active' : 'default'}}" data-index="2" bindtap="switchTab">
+      <view class="cuIcon-favor">
+      </view>
+      收藏
+    </view>
+    <view class="action {{selected === 3 ? 'active' : 'default'}}" data-index="3" bindtap="switchTab">
+      <view class="cuIcon-my">
+      </view>
+      我的
+    </view>
+  </view>
+
+<page-container 
+  show="{{show}}"
+  round="{{round}}"
+  overlay="{{overlay}}"
+  duration="{{duration}}"
+  position="{{position}}"
+  close-on-slide-down="{{false}}"
+  custom-style="{{customStyle}}"
+  overlay-style="{{overlayStyle}}"
+>
+  <view class="detail-page">
+    <view class="middle_view">
+    <view class="icons">
+      <image bindtap='onpublishdemand'  mode='heightFix' src='https://s1.ax1x.com/2022/07/14/jfmtx0.png'></image>
+      <view bindtap='onpublishdemand' class="icontext">发布求购</view>
+    </view>
+    <view class="icons">
+      <image bindtap='onpublishgood'  mode='heightFix' src='https://s1.ax1x.com/2022/07/14/jfmdqU.png'></image>
+      <view bindtap='onpublishgood' class="icontext">发布商品</view>
+    </view>
+    <button class="mine-nouserinfo-avatar" bindtap="exit"></button>
+    </view>
+  </view>
+</page-container>

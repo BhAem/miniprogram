@@ -1,0 +1,190 @@
+<!--pages/swiper_laws/swiper_laws.wxml-->
+<view class="container">
+  <scroll-view class="box" scroll-y="true">
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">统筹城乡发展空间</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      按照主体功能定位，对国土空间的开发、保护和整治进行全面安排和总体布局，推进“多规合一”，加快形成城乡融合发展的空间格局。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">优化乡村发展布局</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持人口资源环境相均衡、经济社会生态效益相统一，打造集约高效生产空间，营造宜居适度生活空间，保护山清水秀生态空间，延续人和自然有机融合的乡村空间关系。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">分类推进乡村发展</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      顺应村庄发展规律和演变趋势，根据不同村庄的发展现状、区位条件、资源禀赋等，按照集聚提升、融入城镇、特色保护、搬迁撤并的思路，分类推进乡村振兴，不搞一刀切。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">坚决打好精准脱贫攻坚战</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      把打好精准脱贫攻坚战作为实施乡村振兴战略的优先任务，推动脱贫攻坚与乡村振兴有机结合相互促进，确保到2020年我国现行标准下农村贫困人口实现脱贫，贫困县全部摘帽，解决区域性整体贫困。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">夯实农业生产能力基础</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      深入实施藏粮于地、藏粮于技战略，提高农业综合生产能力，保障国家粮食安全和重要农产品有效供给，把中国人的饭碗牢牢端在自己手中。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加快农业转型升级</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      按照建设现代化经济体系的要求，加快农业结构调整步伐，着力推动农业由增产导向转向提质导向，提高农业供给体系的整体质量和效率，加快实现由农业大国向农业强国转变。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">建立现代农业经营体系</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持家庭经营在农业中的基础性地位，构建家庭经营、集体经营、合作经营、企业经营等共同发展的新型农业经营体系，发展多种形式适度规模经营，发展壮大农村集体经济，提高农业的集约化、专业化、组织化、社会化水平，有效带动小农户发展。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">强化农业科技支撑</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      深入实施创新驱动发展战略，加快农业科技进步，提高农业科技自主创新水平、成果转化水平，为农业发展拓展新空间、增添新动能，引领支撑农业转型升级和提质增效。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">完善农业支持保护制度</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      以提升农业质量效益和竞争力为目标，强化绿色生态导向，创新完善政策工具和手段，加快建立新型农业支持保护政策体系。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">推动农村产业深度融合</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      把握城乡发展格局发生重要变化的机遇，培育农业农村新产业新业态，打造农村产业融合发展新载体新模式，推动要素跨界配置和产业有机融合，让农村一二三产业在融合发展中同步升级、同步增值、同步受益。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">完善紧密型利益联结机制</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      始终坚持把农民更多分享增值收益作为基本出发点，着力增强农民参与融合能力，创新收益分享模式，健全联农带农有效激励机制，让农民更多分享产业融合发展的增值收益。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">激发农村创新创业活力</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持市场化方向，优化农村创新创业环境，放开搞活农村经济，合理引导工商资本下乡，推动乡村大众创业万众创新，培育新动能。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">推进农业绿色发展</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      以生态环境友好和资源永续利用为导向，推动形成农业绿色生产方式，实现投入品减量化、生产清洁化、废弃物资源化、产业模式生态化，提高农业可持续发展能力。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">持续改善农村人居环境</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      以建设美丽宜居村庄为导向，以农村垃圾、污水治理和村容村貌提升为主攻方向，开展农村人居环境整治行动，全面提升农村人居环境质量。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强乡村生态保护与修复</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      大力实施乡村生态保护与修复重大工程，完善重要生态系统保护制度，促进乡村生产生活环境稳步改善，自然生态系统功能和稳定性全面提升，生态产品供给能力进一步增强。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强农村思想道德建设</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      持续推进农村精神文明建设，提升农民精神风貌，倡导科学文明生活，不断提高乡村社会文明程度。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">弘扬中华优秀传统文化</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      立足乡村文明，吸取城市文明及外来文化优秀成果，在保护传承的基础上，创造性转化、创新性发展，不断赋予时代内涵、丰富表现形式，为增强文化自信提供优质载体。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">丰富乡村文化生活</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      推动城乡公共文化服务体系融合发展，增加优秀乡村文化产品和服务供给，活跃繁荣农村文化市场，为广大农民提供高质量的精神营养。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强农村基层党组织对乡村振兴的全面领导</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      以农村基层党组织建设为主线，突出政治功能，提升组织力，把农村基层党组织建成宣传党的主张、贯彻党的决定、领导基层治理、团结动员群众、推动改革发展的坚强战斗堡垒。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">促进自治法治德治有机结合</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持自治为基、法治为本、德治为先，健全和创新村党组织领导的充满活力的村民自治机制，强化法律权威地位，以德治滋养法治、涵养自治，让德治贯穿乡村治理全过程。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">夯实基层政权</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      科学设置乡镇机构，构建简约高效的基层管理体制，健全农村基层服务体系，夯实乡村治理基础。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强农村基础设施建设</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      继续把基础设施建设重点放在农村，持续加大投入力度，加快补齐农村基础设施短板，促进城乡基础设施互联互通，推动农村基础设施提挡升级。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">提升农村劳动力就业质量</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持就业优先战略和积极就业政策，健全城乡均等的公共就业服务体系，不断提升农村劳动者素质，拓展农民外出就业和就地就近就业空间，实现更高质量和更充分就业。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">增加农村公共服务供给</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      继续把国家社会事业发展的重点放在农村，促进公共教育、医疗卫生、社会保障等资源向农村倾斜，逐步建立健全全民覆盖、普惠共享、城乡一体的基本公共服务体系，推进城乡基本公共服务均等化。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加快农业转移人口市民化</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      加快推进户籍制度改革，全面实行居住证制度，促进有能力在城镇稳定就业和生活的农业转移人口有序实现市民化。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">强化乡村振兴人才支撑</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      实行更加积极、更加开放、更加有效的人才政策，推动乡村人才振兴，让各类人才在乡村大施所能、大展才华、大显身手。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强乡村振兴用地保障</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      完善农村土地利用管理政策体系，盘活存量，用好流量，辅以增量，激活农村土地资源资产，保障乡村振兴用地需求。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">健全多元投入保障机制</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      健全投入保障制度，完善政府投资体制，充分激发社会投资的动力和活力，加快形成财政优先保障、社会积极参与的多元投入格局。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加大金融支农力度</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      健全适合农业农村特点的农村金融体系，把更多金融资源配置到农村经济社会发展的重点领域和薄弱环节，更好满足乡村振兴多样化金融需求。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">加强组织领导</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      坚持党总揽全局、协调各方，强化党组织的领导核心作用，提高领导能力和水平，为实现乡村振兴提供坚强保证。
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">有序实现乡村振兴</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">
+      <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      充分认识乡村振兴任务的长期性、艰巨性，保持历史耐心，避免超越发展阶段，统筹谋划，典型带动，有序推进，不搞齐步走。
+    </view>
+  </scroll-view>
+ </view>

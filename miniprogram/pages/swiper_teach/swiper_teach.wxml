@@ -1,0 +1,68 @@
+<!--pages/swiper_rules/swiper_rules.wxml-->
+<view wx:if="{{!vis}}">
+  <text>敬请期待</text>
+</view>
+<view wx:else>
+<view class="container">
+  <scroll-view class="box" scroll-y="true">
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">进入村予村寻记得要登录哟！</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">完成登录就可以100%使用小程序的功能啦！~</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[0]}}" mode="widthFix" data-id="0" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">长者模式</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">开启长者模式，改变字体大小，让操作更加简单！</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[1]}}" mode="widthFix" data-id="1" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">个人页面</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">进入“我的商品”页面，可以看到我们发布的商品，可以随时进行修改，下架，方便快捷。</view>
+
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[2]}}" mode="widthFix" data-id="2" bindtap="previewImage"/>
+    </view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">如果找不到自己曾经搜索的商品怎么办？</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">没有关系，历史浏览暗藏玄机，记录你的七天足迹，点击商品卡片即可迅速进入商品详细。</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[3]}}" mode="widthFix" data-id="3" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">首页</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">让我们来看看首页吧！</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[4]}}" mode="widthFix" data-id="4" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">分类</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">分类页面丰富多彩，可以在不同专区查看自己想要的产品哦！</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[5]}}" mode="widthFix" data-id="5" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">商品</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">点击商品进入详细页面，可以看到商品发布者信息，发现心仪的商品可以通过点击联系方式与商家联系哦！也不要忘记收藏商品和转发给好友哦！</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[6]}}" mode="widthFix" data-id="6" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">收藏</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">在收藏界面可以看到我们收藏的商品啦，不想要商品了也可直接取消收藏哦。</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[7]}}" mode="widthFix" data-id="7" bindtap="previewImage"/>
+    </view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">发布</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">点击底栏发布，可以进入发布界面，可以自由选择发布需求或发布商品。</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[8]}}" mode="widthFix" data-id="8" bindtap="previewImage"/>
+    </view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">发布商品或发布需求时，要记得完善商品信息哦！</view>
+    <view class="image_container">
+      <image class="teacher" src="{{imageList[9]}}" mode="widthFix" data-id="9" bindtap="previewImage"/>
+    </view>
+  </scroll-view>
+ </view>
+</view>

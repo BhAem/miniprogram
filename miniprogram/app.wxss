@@ -1,0 +1,8 @@
+/**app.wxss**/
+page{
+  background-color: #f2f2f2;
+	font-size: 28rpx;
+	color: #333333;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+

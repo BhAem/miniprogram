@@ -1,0 +1,117 @@
+<!--pages/check1/check1.wxml-->
+<view wx:if="{{!vis}}">
+  <text>敬请期待</text>
+</view>
+<view wx:else>
+<view class="form" style="height:{{height}}rpx">
+  <form bindsubmit="btnSub">
+    <view class="xform">
+      <view class="Tag">
+        <view class="xx1">
+          <view class="xx2">标签</view>
+          <input name="tag" placeholder-class="phcolor" placeholder="请选择商品标签" value="{{chosenTag}}" disabled="true" class="tag-input"></input>
+          <button type="primary" class="tag-button" bindtap="tap">选择标签</button>
+          <page-container show="{{showPage}}" overlay="{{true}}" round="{{true}}" close-on-slideDown="{{true}}"> 
+            <view class="tag-content">
+              <image class='img0' src='https://s3.bmp.ovh/imgs/2022/05/21/c72c095a7b528380.png' bindtap="tap1"></image>
+              <view class="cu-tag bg-blue" id="苹果" bindtap="chosen">苹果</view>
+              <view class="cu-tag bg-blue" id="梨子" bindtap="chosen">梨子</view>
+              <view class="cu-tag bg-blue" id="橙子" bindtap="chosen">橙子</view>
+              <view class="cu-tag bg-blue" id="芒果" bindtap="chosen">芒果</view>
+              <view class="cu-tag bg-blue" id="香蕉" bindtap="chosen">香蕉</view>
+              <view class="cu-tag bg-blue" id="其他水果" bindtap="chosen">其他水果</view>
+              <view class="cu-tag bg-blue" id="鲜鱼" bindtap="chosen">鲜鱼</view>
+              <view class="cu-tag bg-blue" id="鲜虾" bindtap="chosen">鲜虾</view>
+              <view class="cu-tag bg-blue" id="螃蟹" bindtap="chosen">螃蟹</view>
+              <view class="cu-tag bg-blue" id="贝类" bindtap="chosen">贝类</view>
+              <view class="cu-tag bg-blue" id="鱿鱼" bindtap="chosen">鱿鱼</view>
+              <view class="cu-tag bg-blue" id="海味" bindtap="chosen">海味</view>
+              <view class="cu-tag bg-blue" id="猪肉" bindtap="chosen">猪肉</view>
+              <view class="cu-tag bg-blue" id="牛肉" bindtap="chosen">牛肉</view>
+              <view class="cu-tag bg-blue" id="羊肉" bindtap="chosen">羊肉</view>
+              <view class="cu-tag bg-blue" id="鸡肉" bindtap="chosen">鸡肉</view>
+              <view class="cu-tag bg-blue" id="生肉类" bindtap="chosen">生肉类</view>
+              <view class="cu-tag bg-blue" id="熟肉类" bindtap="chosen">熟肉类</view>
+              <view class="cu-tag bg-blue" id="茄果类" bindtap="chosen">茄果类</view>
+              <view class="cu-tag bg-blue" id="叶菜类" bindtap="chosen">叶菜类</view>
+              <view class="cu-tag bg-blue" id="根菜类" bindtap="chosen">根菜类</view>
+              <view class="cu-tag bg-blue" id="鲜蛋" bindtap="chosen">鲜蛋</view>
+              <view class="cu-tag bg-blue" id="腌制蛋品" bindtap="chosen">腌制蛋品</view>
+              <view class="cu-tag bg-blue" id="蛋类制品" bindtap="chosen">蛋类制品</view>
+              <view class="cu-tag bg-blue" id="谷物类" bindtap="chosen">谷物类</view>
+              <view class="cu-tag bg-blue" id="杂豆类" bindtap="chosen">杂豆类</view>
+              <view class="cu-tag bg-blue" id="块茎类" bindtap="chosen">块茎类</view>
+              <view class="cu-tag bg-blue" id="菌芝" bindtap="chosen">菌芝</view>
+              <view class="cu-tag bg-blue" id="菇类" bindtap="chosen">菇类</view>
+              <view class="cu-tag bg-blue" id="药材" bindtap="chosen">药材</view>
+              <view class="cu-tag bg-blue" id="地方特产" bindtap="chosen">地方特产</view>
+              <view class="cu-tag bg-blue" id="风味卤味" bindtap="chosen">风味卤味</view>
+              <view class="cu-tag bg-blue" id="美味糕饼" bindtap="chosen">美味糕饼</view>
+              <view class="cu-tag bg-blue" id="其他" bindtap="chosen">其他</view>
+            </view>
+        </page-container>
+        </view>
+      </view>
+      <view class="x1">
+        <view class="xx1">
+          <view class="xx2">名称</view>
+          <input name="title" placeholder-class="phcolor" placeholder="请输入商品名称" value="{{title}}" class="inputText"></input>
+        </view>
+      </view>
+      <view class="x2">
+        <view class="xx1">
+          <view class="xx2">描述</view>
+          <textarea name="content" maxlength="-1" placeholder-class="phcolor" placeholder="简单介绍一下你的商品，记得标明单价喔~" class="inputText"value="{{content}}"></textarea>
+        </view>
+      </view>
+
+      <view style="margin-top: 15rpx;"><image class="pimg" src="https://pic.imgdb.cn/item/628303c309475431298a0b20.png"></image><input name="price" type="number" bindblur="getPrice" maxlength="11" placeholder="请输入您商品的价格：" value="{{price}}" class="biginput" placeholder-class="phcolor" /></view>
+      
+      <view style="margin-top: 15rpx;"><image class="pimg" src="https://pic.imgdb.cn/item/628303c309475431298a0b17.png"></image><input name="phone" type="tel" bindblur="getPhone"  maxlength="11" placeholder="请输入您的电话：" value="{{phone}}" class="biginput" placeholder-class="phcolor" /></view>
+
+      
+      <van-cell title="位置" is-link bind:click="showPopup" icon="location-o" style="padding-top: 8px;"/>
+      <van-popup show="{{ show }}" round position="bottom">
+        <van-area area-list="{{ areaList }}" 
+        columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}"
+        title="选择你的位置" bind:confirm="onConfirm" bind:cancel="onClose" />
+      </van-popup>
+      <view style="font-size: 30rpx; color: rgba(0, 0, 0, 0.7); margin: 0 0 20rpx 35rpx;">{{address}}</view>
+      
+      <view class='pages'>
+        <view class="xx2">上传图片</view>
+        <view class="images_box">
+          <block wx:key="imgbox" wx:for="{{imgbox}}">
+            <view class='img-box'>
+              <image class='img' src='{{item}}' data-id="{{index}}" bindtap="previewImage"></image>
+              <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+                <image class='img' src='https://pic.imgdb.cn/item/628303c309475431298a0b11.png'></image>
+              </view>
+            </view>
+          </block>
+          <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+            <image class='img' src='https://pic.imgdb.cn/item/628303c309475431298a0b00.pngg'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button form-type="submit" style="background-color: #3abf78; margin: 120rpx; ">发布</button>
+  </form>
+</view>
+<view class="obstacle"></view>
+<view class="obstacle"></view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

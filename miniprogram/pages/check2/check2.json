@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "发布求购",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#18B458",
+  "usingComponents": {
+    "van-field": "../../miniprogram_npm/@vant/weapp/field/index",
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

@@ -1,0 +1,18 @@
+<!--pages/swiper_rules/swiper_rules.wxml-->
+ <view class="container">
+  <scroll-view class="box" scroll-y="true">
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;">网络维权，截图很重要</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;">一定要记得截图哦~</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">切勿盲目支付“定金”</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">定金不退！订金能退！</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">对于预付定金的商品要谨慎下单</view>
+
+    <view class="topic" style="font-size: {{switchOldMode? 25:''}}px;" wx:if="{{vis}}">如何解决纠纷：</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">1、与经营者协商和解</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">2、请求消费者协会或者依法成立的其他调解组织调解</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">3、向有关行政部门投诉</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">4、根据与经营者达成的仲裁协议提请仲裁机构仲裁</view>
+    <view class="mytext" style="font-size: {{switchOldMode? 21:''}}px;" wx:if="{{vis}}">5、向人民法院提起诉讼</view>
+  </scroll-view>
+ </view>

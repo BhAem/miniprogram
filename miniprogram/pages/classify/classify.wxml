@@ -1,0 +1,150 @@
+<!--pages/classify/classify.wxml-->
+<view wx:if="{{!vis2}}">
+  <van-card desc="以支部为核心，以村民为主体；以创新谋发展，以共享促和谐；以乡村旅游为突破口，打造农民创业平台；以组建合作社为切入点，实现三变；以三产带二产促一产，实现三产融合发展；调节收入分配，实现共同富裕；注重精神文明，加强思想教育；弘扬优良传统，淳厚乡风民俗。" title="袁家村" thumb="{{im0}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="结合黄帝文化底蕴深厚的优势，以“林业立村、生态富村、旅游活村、文化强村”思路发展乡村特色旅游。2007 年，在外经商多年的乔宗旺回村担任村党支部书记，他带领村民不等不靠，利用紧靠郑州市区的区位优势和黄帝文化的品牌优势，按照“一村一品、一村一景、一村一产业”方案打造泰山村特色旅游村。" title="泰山村" thumb="{{im1}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="竹泉村在开发之初，秉承“先保护、后开发”的原则，确定了建设新村，腾空古村的“一古一新”理念：古是指最大限度保留古村原有风貌系统，打造旅游接待服务吸引核；新是指按照乡村振兴的标准并结合居民现代生活需求建设新村，安置村民。" title="竹泉村" thumb="{{im2}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="强化规划统筹，2013 年花费 300 万元高标准制定村庄发展规划，通过规划进行招商，浙北灵峰旅游看到鲁家村美好发展远景，和鲁家村组建了“公司 + 村 + 家庭农场”的村庄经济开发模式，启动了全国首个家庭农场集聚区和示范区建设，将美丽乡村田园综合体“有农有牧，有景有致，有山有水，各具特色”的独特魅力呈现给世人。村集体通过财政项目资金转化为股本金实行“统分结合、双层经营”的理念，把集体经济的优越性和家庭经营的积极性紧密结合到了一起。" title="鲁家村" thumb="{{im3}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="文化传承的保护性开发。合掌村包含民居保护、民俗观光、民宿生态体验等完整的观光产业链。复兴文化，文化兴村。合掌村的文化包括民俗文化、历史文化和传统乡土文化。" title="合掌村" thumb="{{im4}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="按照把乡村建设得更像乡村理念，融入“互联网 + 三农”发展理念，构建集一、二、三产业与农旅相结合的“美丽乡村”发展系统，推动三瓜村的全面振兴发展。在建设过程中保护乡村原有的田林农湖系统，对荒地、山地、林地进行修整保护，修复水系，把乡村田野打造成诗意栖居、宜游宜业的家园。" title="三瓜公社" thumb="{{im5}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="立足“1+6=1”的发展战略，即立足旅游资源，实施产业富村、商贸活村、生态立村、旅游兴村、科技强村，建成百姓富、生态美的乡村发展示范区域，促进农业结构调整和转型发展。" title="舍烹村" thumb="{{im6}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+  <van-card desc="坚持“以农民为主体、让农民共同致富”的理念，探索实施“公司 + 项目 + 村民入股”的综合性发展模式，全村人人是股东、户户当老板，休闲农业与乡村旅游一体发展。" title="中郝峪" thumb="{{im7}}" desc-class="card-desc">
+    <view slot="footer">
+    </view>
+  </van-card>
+</view>
+<view wx:else>
+<van-search disabled value="{{ value }}" placeholder="请输入搜索关键词" label="搜宝贝" bind:focus="onSearch" bindtap="Search" />
+<view class="container">
+  <view class="top_area">
+    <view class="VerticalBox">
+      <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(120vh - 375rpx)" style="margin-top: 30rpx; width: {{switchOldMode? 220:''}}rpx; ">
+        <view wx:for="{{list}}" wx:for-item="it" wx:for-index="iii" wx:key="iii" bindtap='tabSelect' data-id="{{iii}}" class="cu-item {{iii==TabCur?'text-green cur':''}}" style="font-size: {{switchOldMode? 14:''}}px;">
+          {{it.name}}
+        </view>
+      </scroll-view>
+
+      <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+
+        <view class="padding-top padding-lr" wx:for="{{list}}" wx:for-index="index0" wx:key="index0" wx:for-item="i" id="main-{{index0}}">
+          <view class='cu-bar solid-bottom bg-white'>
+            <view class='action' style="font-size: {{switchOldMode? 18:''}}px;">
+              <text class='cuIcon-title text-green'></text> {{i.name}}
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '新鲜水果'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList1}}" wx:for-index="index1" wx:for-item="item1" wx:key="index1">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item1.image}});" bindtap="toFruit" data-index="{{index1}}"></view>
+                </view>
+                <text bindtap="toFruit" data-index="{{index1}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item1.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '海鲜水产'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList2}}" wx:for-index="index2" wx:for-item="item2" wx:key="index2">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item2.image}});" bindtap="toSeaFood" data-index="{{index2}}"></view>
+                </view>
+                <text bindtap="toSeaFood" data-index="{{index2}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item2.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '精选肉类'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList3}}" wx:for-index="index3" wx:for-item="item3" wx:key="index3">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item3.image}});" bindtap="toMeat" data-index="{{index3}}"></view>
+                </view>
+                <text bindtap="toMeat" data-index="{{index3}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item3.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '鲜美蔬菜'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList4}}" wx:for-index="index4" wx:for-item="item4" wx:key="index4">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item4.image}});" bindtap="toVegetable" data-index="{{index4}}"></view>
+                </view>
+                <text bindtap="toVegetable" data-index="{{index4}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item4.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '营养蛋品'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList5}}" wx:for-index="index5" wx:for-item="item5" wx:key="index5">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item5.image}});" bindtap="toEgg" data-index="{{index5}}"></view>
+                </view>
+                <text bindtap="toEgg" data-index="{{index5}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item5.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '粗粮产品'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList6}}" wx:for-index="index6" wx:for-item="item6" wx:key="index6">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item6.image}});" bindtap="toBeans" data-index="{{index6}}"></view>
+                </view>
+                <text bindtap="toBeans" data-index="{{index6}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item6.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '药材菌类'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList7}}" wx:for-index="index7" wx:for-item="item7" wx:key="index7">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item7.image}});" bindtap="toMedicine" data-index="{{index7}}"></view>
+                </view>
+                <text bindtap="toMedicine" data-index="{{index7}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item7.name}}</text>
+              </view>
+            </view>
+          </view>
+
+          <view wx:if="{{i.name == '农家特产'}}">
+            <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+              <view class="cu-item " wx:for="{{imageList8}}" wx:for-index="index8" wx:for-item="item8" wx:key="index8">
+                <view class="justify-center">
+                  <view class="cu-avatar lg bg-white justify-center" style="background-image:url({{item8.image}});" bindtap="toSpecialty" data-index="{{index8}}"></view>
+                </view>
+                <text bindtap="toSpecialty" data-index="{{index8}}" style="font-size: {{switchOldMode? 16:''}}px;">{{item8.name}}</text>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="standView" style=" height: {{tabbarHeight}}rpx;"></view>
+</view>
+</view>

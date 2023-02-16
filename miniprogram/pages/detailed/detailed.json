@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "详情界面",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#18B458",
+  "usingComponents": {
+    "van-search": "../../miniprogram_npm/@vant/weapp/search/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-dropdown-menu": "../../miniprogram_npm/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "../../miniprogram_npm/@vant/weapp/dropdown-item/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-config-provider": "@vant/weapp/config-provider/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
+  }
+}

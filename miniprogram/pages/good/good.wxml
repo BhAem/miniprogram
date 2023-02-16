@@ -1,0 +1,39 @@
+<!--pages/good/good.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  class="slide" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" catchtap="previewImage" data-index="{{index}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="business">
+    <image class="avatar" src="{{avatarUrl}}" mode="scaleToFill"/>
+    <view class="businesser">
+      <view class="nickname" style="font-size: {{switchOldMode? 24:''}}px;">{{nickname}}</view>
+      <view class="position">{{position}}</view>
+    </view>
+    <view class="right_green"></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="mid">
+    <view class="green_topic" style="font-size: {{switchOldMode? 20:''}}px; width: {{switchOldMode? 270:''}}rpx; height: {{switchOldMode? 80:''}}rpx;">商品详情</view>
+    <view class="good_top">
+      <view class="good_name" style="font-size: {{switchOldMode? 22:''}}px;">{{good.title}}</view>
+      <view wx:if="{{vis2}}" class="good_price" style="font-size: {{switchOldMode? 22:''}}px; margin-right: {{switchOldMode? 40:''}}rpx;">￥{{good.price}}</view>
+    </view>
+    <view class="good_detail" bindtap="viewCopyTextClick" style="font-size: {{switchOldMode? 20:''}}px;">{{good.content}}</view>
+    <view wx:if="{{vis2}}" class="green_topic" style="font-size: {{switchOldMode? 20:''}}px; width: {{switchOldMode? 270:''}}rpx; height: {{switchOldMode? 80:''}}rpx;">商品位置</view>
+    <view wx:if="{{vis2}}" class="good_position" style="font-size: {{switchOldMode? 20:''}}px;">{{address}}</view>
+    <view wx:if="{{vis2}}" class="green_topic" style="font-size: {{switchOldMode? 20:''}}px; width: {{switchOldMode? 270:''}}rpx; height: {{switchOldMode? 80:''}}rpx;">发布时间</view>
+    <view class="good_time" style="font-size: {{switchOldMode? 20:''}}px;">{{good.time}}</view>
+  </view>
+
+<van-goods-action>
+  <van-goods-action-icon icon="share-o" text="转发" open-type="share"/>
+  <van-goods-action-icon icon="{{collect_flag == false ? star0 : star}}" text="收藏" bindtap="collect"/>
+  <van-goods-action-button color="#18B458"  bindtap="phone" > <span style="font-size: {{switchOldMode? 20:''}}px;">联系方式</span> </van-goods-action-button>
+</van-goods-action>
+
+</view> 

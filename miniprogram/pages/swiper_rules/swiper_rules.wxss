@@ -1,0 +1,43 @@
+/* pages/swiper_rules/swiper_rules.wxss */
+.container {
+  width: 750rpx;
+  height: 100vh;
+  /* height: mywindowHeight; */
+  background-image: url('https://636c-cloud1-3g192wyqd9d72719-1311228133.tcb.qcloud.la/imags/publish_bg.jpg?sign=f6e27765375c3f9e3f354ccb3cb358db&t=1650612073');
+  background-size: 100% 100%;
+
+  padding-top: 5vh;
+}
+
+.box {
+  margin-left: 10%;
+  width: 80%;
+  height: 95%;
+
+  background-color: white;
+
+  border: #18B458 5rpx solid;
+  border-radius: 40rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+
+.topic {
+  margin: 20rpx;
+
+  padding-left: 20rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  font-size: larger;
+  font-weight: bold;
+  background-color: gold;
+
+  color: white;
+  border-radius: 15rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+
+.mytext {
+  margin: 20rpx;
+  padding-left: 20rpx;
+  font-size: 35rpx;
+}

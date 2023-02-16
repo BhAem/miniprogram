@@ -1,0 +1,62 @@
+<!--pages/person/person.wxml-->
+
+<!-- 最上方 -->
+<view class="top_container">
+  <image class="rounded_corner_matrix" src="https://pic.imgdb.cn/item/628304cb09475431298d3ac5.png" mode="scaleToFill"/>
+  <image class="field" src="https://pic.imgdb.cn/item/628304e109475431298d7c87.png" mode="scaleToFill"/>
+  <image class="avatar_border" src="https://pic.imgdb.cn/item/6283052109475431298e3521.jpg" mode="scaleToFill"/>
+  <image class="avatar" src="{{avatarUrl}}" mode="scaleToFill" bindtap="getUserProfile"/>
+</view>
+
+<!-- 用户名 -->
+<view class="username" style="font-size: {{switchOldMode? 22:''}}px;">{{nickName}}</view>
+
+<!-- 交易工具栏 -->
+<view class="menu_trade">
+  <view class="menu_item">
+    <image src="https://pic.imgdb.cn/item/628304b709475431298cfdd0.png" mode="widthFix" bindtap="myPublish"/>
+    <view bindtap="myPublish" style="font-size: {{switchOldMode? 18:''}}px;">{{look1}}</view>
+  </view>
+  <view class="menu_item">
+    <image src="https://s1.ax1x.com/2022/07/14/jfmVPA.png" mode="widthFix" bindtap="myDemand"/>
+    <view bindtap="myDemand" style="font-size: {{switchOldMode? 18:''}}px;">{{look2}}</view>
+  </view>
+  <view class="menu_item">
+    <image src="https://s1.ax1x.com/2022/07/14/jfmmxP.png" mode="widthFix" bindtap="myHistory"/>
+    <view bindtap="myHistory" style="font-size: {{switchOldMode? 18:''}}px;">历史记录</view>
+  </view>
+  <!-- <view class="menu_item">
+    <image src="./images/servers.png" mode="widthFix"/>
+    <view>服务评价</view>
+  </view> -->
+</view>
+
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item arrow" bindtap="mySetting">
+      <view class="content">
+        <image src="https://pic.imgdb.cn/item/627f5ae209475431294401d1.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey" style="font-size: {{switchOldMode? 18:''}}px;">长者模式</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content">
+        <button open-type="feedback" class="cu-btn content" style="display: contents;">
+          <image src="https://pic.imgdb.cn/item/627f5ae209475431294401b9.png" class="png" mode="aspectFit"></image>
+          <text class="text-grey" style="font-size: {{switchOldMode? 18:''}}px;">联系我们</text>
+        </button>
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="myHelp">
+      <button class="cu-btn content" > 
+        <image src="https://pic.imgdb.cn/item/627f5ae209475431294401b0.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey" style="font-size: {{switchOldMode? 18:''}}px;">帮助攻略</text>
+      </button>
+    </view>
+    <view class="cu-item arrow" bindtap="Notice">
+      <navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
+        <image src="https://pic.imgdb.cn/item/627f5ae209475431294401be.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey" style="font-size: {{switchOldMode? 18:''}}px;">平台须知</text>
+      </navigator>
+    </view>
+  </view>
+<view style="margin-top: 55rpx;"></view>

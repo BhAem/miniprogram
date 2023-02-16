@@ -1,0 +1,157 @@
+/* pages/launch/launch.wxss */
+
+page {
+  background-image: url(https://pic.imgdb.cn/item/628340990947543129646622.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+element.style {
+  margin-top: 100%;
+}
+
+.padding {
+  padding: 30rpx;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.solid,
+.solid-top,
+.solid-right,
+.solid-bottom,
+.solid-left,
+.solids,
+.solids-top,
+.solids-right,
+.solids-bottom,
+.solids-left,
+.dashed,
+.dashed-top,
+.dashed-right,
+.dashed-bottom,
+.dashed-left {
+  position: relative;
+}
+
+
+
+.padding-sm {
+  padding: 20rpx;
+}
+
+.margin-xs {
+  margin: 10rpx;
+}
+
+.radius {
+  border-radius: 6rpx;
+}
+
+.solid-bottom::after {
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.solid::after,
+.solid-top::after,
+.solid-right::after,
+.solid-bottom::after,
+.solid-left::after,
+.solids::after,
+.solids-top::after,
+.solids-right::after,
+.solids-bottom::after,
+.solids-left::after,
+.dashed::after,
+.dashed-top::after,
+.dashed-right::after,
+.dashed-bottom::after,
+.dashed-left::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.shadow[class*="-green"] {
+  box-shadow: 6rpx 6rpx 8rpx rgba(48, 156, 63, 0.2);
+}
+
+.cu-btn.lg {
+  padding: 0 40rpx;
+  font-size: 32rpx;
+  height: 80rpx;
+}
+
+.bg-green {
+  background-color: #39b54a;
+  color: #ffffff;
+}
+
+.cu-btn {
+  position: relative;
+  border: 0rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  height: 64rpx;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible;
+  margin-left: initial;
+  transform: translate(0rpx, 0rpx);
+  margin-right: initial;
+}
+
+.round {
+  border-radius: 5000rpx;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  line-height: 2.55555556;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-left: 14px;
+  padding-right: 14px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}

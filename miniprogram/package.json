@@ -1,0 +1,25 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/area-data": "^1.2.4",
+    "@vant/weapp": "^1.10.3",
+    "area-data": "^3.1.2",
+    "china-area-data": "^5.0.1",
+    "miniprogram-sm-crypto": "^0.3.7",
+    "uview-ui": "^2.0.31"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.4.6",
+    "sass": "^1.51.0",
+    "sass-loader": "^10.2.1"
+  },
+  "description": ""
+}

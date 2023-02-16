@@ -1,0 +1,188 @@
+/* pages/history/history.wxss */
+.bgbg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img {
+	width: 45%;
+	height: 30%;
+}
+
+.cu-timeline {
+	display: block;
+	background-color: #ffffff;
+}
+
+.cu-timeline .cu-time {
+	width: 120rpx;
+	text-align: center;
+	padding: 20rpx 0;
+	font-size: 26rpx;
+	color: #888;
+	display: block;
+}
+
+.cu-timeline>.cu-item {
+	padding: 30rpx 30rpx 30rpx 120rpx;
+	position: relative;
+	display: block;
+	z-index: 0;
+}
+
+.cu-timeline>.cu-item:not([class*="text-"]) {
+	color: #ccc;
+}
+
+.cu-timeline>.cu-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1rpx;
+	background-color: #ddd;
+	left: 60rpx;
+	height: 100%;
+	top: 0;
+	z-index: 8;
+}
+
+.cu-timeline>.cu-item::before {
+	font-family: "cuIcon";
+	display: block;
+	position: absolute;
+	top: 36rpx;
+	z-index: 9;
+	background-color: #ffffff;
+	width: 50rpx;
+	height: 50rpx;
+	text-align: center;
+	border: none;
+	line-height: 50rpx;
+	left: 36rpx;
+}
+
+.cu-timeline>.cu-item:not([class*="cuIcon-"])::before {
+	content: "\e763";
+}
+
+.cu-timeline>.cu-item[class*="cuIcon-"]::before {
+	background-color: #ffffff;
+	width: 50rpx;
+	height: 50rpx;
+	text-align: center;
+	border: none;
+	line-height: 50rpx;
+	left: 36rpx;
+}
+
+.cu-timeline>.cu-item>.content {
+	padding: 30rpx;
+	border-radius: 6rpx;
+	display: block;
+	line-height: 1.6;
+}
+
+.cu-timeline>.cu-item>.content:not([class*="bg-"]) {
+	background-color: #f1f1f1;
+	color: #333333;
+}
+
+.cu-timeline>.cu-item>.content+.content {
+	margin-top: 20rpx;
+}
+
+/* pages/mycollection/mycollection.wxss */
+.selection {
+	margin: 20rpx;
+
+	width: 750rpx;
+}
+
+.left {
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+	background-color: #18B458;
+
+	width: 48%;
+	height: 80%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+
+	color: white;
+	border-radius: 10rpx 0 0 10rpx;
+}
+
+.right {
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+	background-color: white;
+
+	width: 48%;
+	height: 80%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #18B458;
+	border-radius: 0 10rpx 10rpx 0;
+}
+
+.card-desc {
+	display: -webkit-box;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	font-size: 28rpx;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	/*设置 需要显示的行数*/
+}
+
+.standView {
+	width: 100%;
+	/* height: 300rpx;  */
+	/* background-color: black; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	float: left;
+}
+
+.jz {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.text-blue,
+.line-blue,
+.lines-blue {
+	color: #0081ff;
+}
+
+.font {
+  font-size: 48rpx !important;
+  margin-bottom: 20rpx;
+}
+
+.font2 {
+  font-size: 42rpx !important;
+  display: -webkit-box;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	/*设置 需要显示的行数*/
+}

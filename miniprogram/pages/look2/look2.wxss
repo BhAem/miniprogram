@@ -1,0 +1,81 @@
+/* pages/look2/look2.wxss */
+.bgbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 45%;
+  height: 30%;
+}
+
+.selection {
+  margin: 20rpx;
+
+  width: 750rpx;
+}
+
+.left {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #18B458;
+
+  width: 48%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+
+  color: white;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.right {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: white;
+
+  width: 48%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #18B458;
+  border-radius: 0 10rpx 10rpx 0;
+}
+
+.card-desc {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  /*设置 需要显示的行数*/
+}
+
+.font {
+  font-size: 48rpx !important;
+  margin-bottom: 20rpx;
+}
+
+.font2 {
+  font-size: 42rpx !important;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  /*设置 需要显示的行数*/
+}
